@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3CA1AE"
+    android:backgroundTint="#17AC9E"
     tools:context=".TestActivity">
 
     <TextView
@@ -15,9 +16,10 @@
         android:layout_marginEnd="10dp"
         android:background="#EFEAEA"
         android:backgroundTint="#EDE8E8"
-        android:hint="Name: "
+        android:hint="Name"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,15 +41,17 @@
         android:ems="10"
         android:hint="Enter Your Name: "
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:textAlignment="textStart"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtName"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <Button
         android:id="@+id/btnGetName"
@@ -65,4 +69,89 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPersonName"
         app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/rgRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetName">
+
+        <RadioButton
+            android:id="@+id/rgButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Option1"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rgButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Option2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rgButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Option3"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="CheckBox1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetName"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="CheckBox2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetName"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <Spinner
+        android:id="@+id/spSpin"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#8BC34A"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/rgRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetName"
+        app:layout_constraintVertical_bias="0.19"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
