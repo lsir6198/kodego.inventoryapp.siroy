@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate((layoutInflater))
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
      binding.btnSignIn.setOnClickListener(){
@@ -22,21 +22,33 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-    private fun checkCredential(userName: String, userPassword: String): Boolean{
-      val correctUserName : String = "admin"
-      val correctPassword : String = "admin123"
+    private fun checkCredential(userName: String, userPassword: String) {
+        val correctUserName: String = "admin"
+        val correctPassword: String = "admin123"
 
-      if ((correctUserName == userName)&&(correctPassword == userPassword)){
+        val correctUserName2: String = "Lesa"
+        val correctPassword2: String = "pass123"
 
-          val intent = Intent(this,HomePageActivity::class.java)
-          startActivity(intent)
-          finish()
-          Toast.makeText(applicationContext, "Logging in", Toast.LENGTH_LONG).show()
-          return true
+        if ((correctUserName == userName) && (correctPassword == userPassword)) {
 
-      }else{
-          Toast.makeText(applicationContext, "Invalid Credentials", Toast.LENGTH_LONG).show()
-          return false
-      }
+            val intent = Intent(this, HomePageActivity::class.java)
+            intent.putExtra("nameID", userName)
+            startActivity(intent)
+            finish()
+            Toast.makeText(applicationContext, "Logging in", Toast.LENGTH_LONG).show()
+
+
+        } else if ((correctUserName2 == userName) && (correctPassword2 == userPassword)) {
+
+            val intent = Intent(this, HomePageActivity::class.java)
+            intent.putExtra("nameID", userName)
+            startActivity(intent)
+            finish()
+            Toast.makeText(applicationContext, "Logging in", Toast.LENGTH_LONG).show()
+
+
+          } else {
+            Toast.makeText(applicationContext, "Invalid Credentials", Toast.LENGTH_LONG).show()
+        }
     }
 }
