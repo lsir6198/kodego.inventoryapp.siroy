@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
         <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_product_detail.xml" value="0.1" />
         <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_splash.xml" value="0.21" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_student_home_page.xml" value="0.25" />
         <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_test.xml" value="0.25" />
-        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/textview.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/row_item.xml" value="0.22" />
+        <entry key="..\:/Users/Lesa Siroy/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/textview.xml" value="0.18" />
       </map>
     </option>
   </component>
