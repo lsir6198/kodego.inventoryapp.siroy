@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="150dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -32,12 +32,14 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.179"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/tvItemName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="296dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="10dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="Item Name"
@@ -49,12 +51,12 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imgProduct"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.219" />
+                app:layout_constraintVertical_bias="0.101" />
 
             <TextView
                 android:id="@+id/tvDescription"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="296dp"
+                android:layout_height="34dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="Description: "
@@ -62,8 +64,55 @@
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imgProduct"
-                app:layout_constraintTop_toBottomOf="@+id/tvItemName" />
+                app:layout_constraintTop_toBottomOf="@+id/tvItemName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Quantity"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.281"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                app:layout_constraintVertical_bias="0.431" />
+
+            <ImageButton
+                android:id="@+id/imgEdit"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#ECC8C7"
+                android:contentDescription="EditButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.57"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/imgDelete"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#ECC8C7"
+                android:contentDescription="DeleteButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgEdit"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
